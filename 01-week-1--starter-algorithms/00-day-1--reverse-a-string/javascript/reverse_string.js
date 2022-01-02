@@ -1,5 +1,9 @@
+//
+
 function reverseString(str) {
-  // type your code here
+  let splitStr = str.split('')
+
+
 }
 
 if (require.main === module) {
