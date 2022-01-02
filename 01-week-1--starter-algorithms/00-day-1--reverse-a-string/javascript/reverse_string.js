@@ -2,6 +2,11 @@
 
 function reverseString(str) {
   let splitStr = str.split('')
+  let reversed = []
+
+  for (let i = 0; i < str.length; i++) {
+    reversed.push(splitStr.pop())
+  }
 
 
 }
