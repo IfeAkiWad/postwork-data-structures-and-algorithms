@@ -1,5 +1,6 @@
 function findFirstDuplicate(arr) {
   // type your code here
+  return
 }
 
 if (require.main === module) {
