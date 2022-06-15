@@ -1,5 +1,14 @@
+/*The selection sort algorithm sorts an array by repeatedly finding the minimum element (lowest value) in the input Array, and then putting it at the correct location in the sorted Array.
+
+Input: [3, -1, 5, 2]
+Output: [-1, 2, 3, 5]
+*/
+
 function selectionSort(arr) {
   // type your code here
+
+  // so I'm finding the lowest elementin the array and plcing it in it's sorted place in the array
+  //  i'm thinking sliding window
 }
 
 if (require.main === module) {
