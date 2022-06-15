@@ -9,6 +9,18 @@ function selectionSort(arr) {
 
   // so I'm finding the lowest elementin the array and plcing it in it's sorted place in the array
   //  i'm thinking sliding window
+
+  const sorted = [];
+
+  while (arr.length > 0) {
+    const min = Math.min(...arr);
+    const idx = arr.indexOf(min);
+
+    sorted.push(min);
+    arr.splice(idx, 1);
+  }
+
+  return sorted;
 }
 
 if (require.main === module) {
