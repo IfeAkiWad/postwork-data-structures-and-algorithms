@@ -10,17 +10,21 @@ function selectionSort(arr) {
   // so I'm finding the lowest elementin the array and plcing it in it's sorted place in the array
   //  i'm thinking sliding window
 
-  const sorted = [];
+  const sorted = []; //created empty array to add lowest element each loop
 
   while (arr.length > 0) {
-    const min = Math.min(...arr);
-    const idx = arr.indexOf(min);
+    const min = Math.min(...arr); //storing lowest element into variable
+    console.log("min", min)
+    const idx = arr.indexOf(min); //storing index of lowest element into variable
 
-    sorted.push(min);
-    arr.splice(idx, 1);
+    sorted.push(min); // push lowest element into sorted array
+    console.log("sort", sorted)
+    console.log("splice", arr.splice(idx, 1)); // confused
   }
 
+  console.log("sorted", sorted)
   return sorted;
+  
 }
 
 if (require.main === module) {
